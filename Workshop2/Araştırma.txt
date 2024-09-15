@@ -1,0 +1,68 @@
+Web Nedir?
+Web, World Wide Web (WWW) olarak da bilinir ve internet üzerinde bilgi paylaşımını sağlayan bir sistemdir.
+Web, çeşitli web siteleri ve uygulamaları aracılığıyla kullanıcıların bilgiye erişmesini ve etkileşimde bulunmasını mümkün kılar.
+
+1.Web'in Temel Bileşenleri
+Web Sunucuları: Web içeriğini barındıran ve kullanıcıların tarayıcılarından gelen istekleri işleyen sunuculardır. Örneğin, Apache ve Nginx gibi sunucular.
+
+-Web Tarayıcıları: Kullanıcıların web sayfalarını görüntülemesini sağlayan yazılımlardır. Örneğin, Chrome, Firefox, Safari.
+-Web Sayfaları: HTML (Hypertext Markup Language) ile yapılandırılmış ve kullanıcıya sunulan bilgi ve medya içeren dokümanlardır.
+-URL (Uniform Resource Locator): Web'deki belirli bir sayfayı veya kaynağı tanımlayan adrestir. Örneğin, https://www.example.com.
+-HTTP/HTTPS: Web tarayıcıları ile sunucular arasındaki iletişimi sağlayan protokollerdir. HTTPS, şifreli ve güvenli iletişim sağlar.
+
+2.Web'in Çalışma Prensibi
+-Kullanıcı İsteği: Kullanıcı, web tarayıcısına bir URL yazar veya bir bağlantıya tıklar.
+-DNS Çözümleme: URL, IP adresine dönüştürülür.
+-Sunucuya Bağlantı: Tarayıcı, IP adresini kullanarak web sunucusuna bağlanır.
+-İçeriğin Sunulması: Web sunucusu, talep edilen içeriği (HTML, CSS, JavaScript) tarayıcıya gönderir.
+-İçeriğin Görüntülenmesi: Tarayıcı, alınan içeriği işleyip kullanıcıya gösterir.
+
+3.Temel Teknolojiler
+-HTML (Hypertext Markup Language): Web sayfalarının yapısını belirler.
+-CSS (Cascading Style Sheets): Web sayfalarının stil ve görünümünü yönetir.
+-JavaScript: Web sayfalarına etkileşim ve dinamik özellikler ekler.
+Web, internet üzerindeki bilgiye erişimi ve etkileşimi sağlar, kullanıcıların bilgi arama, iletişim kurma ve uygulamalar kullanma işlemlerini destekler.
+
+HTTP/HTTPS Nedir?
+HTTP (Hypertext Transfer Protocol) ve HTTPS (Hypertext Transfer Protocol Secure), web üzerindeki veri iletimini sağlayan protokollerdir.
+Her ikisi de web tarayıcıları ile sunucular arasındaki iletişimi yönetir, ancak güvenlik açısından farklılık gösterirler.
+
+1.HTTP (Hypertext Transfer Protocol)
+-Temel Tanım: HTTP, web tarayıcıları ve sunucular arasında veri iletimini sağlayan bir protokoldür. Web sayfalarının, resimlerin, videoların ve diğer içeriklerin aktarımını yönetir.
+-Port: Genellikle 80 numaralı portu kullanır.
+-Güvenlik: HTTP, verilerin şifrelenmediği bir protokoldür. Bu, iletilen verilerin üçüncü taraflar tarafından okunabileceği veya değiştirilebileceği anlamına gelir.
+-Kullanım: Genellikle hassas olmayan veri iletiminde kullanılır. Örneğin, genel bilgi sayfaları veya açık erişimli web siteleri.
+2.HTTPS (Hypertext Transfer Protocol Secure)
+-Temel Tanım: HTTPS, HTTP'nin güvenli bir versiyonudur. Verilerin şifrelenmesini sağlayarak iletişimi korur.
+-Port: Genellikle 443 numaralı portu kullanır.
+-Güvenlik: HTTPS, SSL/TLS protokollerini kullanarak verilerin şifrelenmesini sağlar. Bu, verilerin üçüncü taraflar tarafından okunmasını ve değiştirilmesini önler.
+-Kullanım: Genellikle hassas ve kişisel bilgilerin iletildiği web sitelerinde kullanılır, örneğin, bankacılık uygulamaları, e-ticaret siteleri ve giriş/çıkış formları.
+
+Request-Response Nedir?
+Request-Response (İstek-Yanıt) Modeli, ağ üzerinden iletişimde bulunan iki bileşen arasındaki temel etkileşim biçimidir.
+Bu model, istemci ve sunucu arasında veri alışverişini tanımlar ve genellikle web, API ve diğer ağ tabanlı uygulamalarda kullanılır.
+
+1. Request (İstek)
+-Tanım: İstemci (örneğin, bir web tarayıcısı veya uygulama), sunucuya veri talep eden bir mesaj gönderir. Bu istek genellikle bir URL, belirli HTTP metodları ve bazı ek bilgiler içerir.
+-İçerik: İstek, genellikle şu bilgileri içerir:
+-HTTP Metodu: GET, POST, PUT, DELETE gibi eylemler.
+-URL: İstenilen kaynağın adresi (örneğin, https://example.com/api/data).
+-Başlıklar (Headers): Ekstra bilgi, örneğin içerik türü (Content-Type), kabul edilen veri formatı (Accept) ve kimlik doğrulama bilgileri.
+-Gövde (Body): Veri gönderimi gerekiyorsa, bu kısmı içerir (özellikle POST ve PUT isteklerinde).
+
+2. Response (Yanıt)
+-Tanım: Sunucu, istemciden gelen isteğe yanıt olarak veri gönderir. Yanıt, isteğin başarılı olup olmadığını ve talep edilen veriyi içerir.
+-İçerik: Yanıt genellikle şu bilgileri içerir:
+-HTTP Durum Kodu: İsteğin başarılı olup olmadığını belirtir (örneğin, 200 OK, 404 Not Found, 500 Internal Server Error).
+-Başlıklar (Headers): Yanıtla ilgili bilgi, örneğin yanıt türü (Content-Type), sunucu bilgisi ve önbellekleme bilgileri.
+-Gövde (Body): İstemcinin talep ettiği veri veya yanıt mesajı. Örneğin, bir HTML sayfası, JSON verisi veya hata mesajı.
+
+3.İstek-Yanıt Akışı
+-İstemci İstek Gönderir: İstemci, sunucudan veri talep eden bir HTTP isteği gönderir.
+-Sunucu İsteği İşler: Sunucu, gelen isteği alır ve işleme koyar. Bu süreçte istekte belirtilen URL'yi, HTTP metodunu ve başlıkları değerlendirir.
+-Sunucu Yanıt Gönderir: Sunucu, isteği işledikten sonra bir HTTP yanıtı oluşturur ve istemciye gönderir.
+                        Bu yanıt, isteğin başarılı olup olmadığını ve talep edilen verileri içerir.
+-İstemci Yanıtı Alır ve İşler: İstemci, sunucudan gelen yanıtı alır, işlemlerini yapar ve kullanıcıya uygun şekilde sunar.
+
+
+
