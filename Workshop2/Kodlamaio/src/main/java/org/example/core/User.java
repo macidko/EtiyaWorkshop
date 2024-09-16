@@ -1,6 +1,6 @@
-package org.example;
+package org.example.core;
 
-public class User {
+public class User implements Entity {
     private int id;
     private String fullName;
     private String email;
@@ -12,7 +12,7 @@ public class User {
         this.email = email;
         this.password = password;
     }
-
+    @Override
     public int getId() {
         return id;
     }
@@ -44,4 +44,5 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }

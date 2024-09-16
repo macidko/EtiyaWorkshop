@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e95bfbc1-360e-4204-a9ac-981dbb563fc9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Kodlamaio/src/main/java/org/example/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kodlamaio/src/main/java/org/example/business/CourseManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kodlamaio/src/main/java/org/example/business/UserManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kodlamaio/src/main/java/org/example/dataAccess/CourseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kodlamaio/src/main/java/org/example/dataAccess/InMemoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kodlamaio/src/main/java/org/example/dataAccess/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kodlamaio/src/main/java/org/example/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kodlamaio/src/main/java/org/example/entities/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kodlamaio/src/main/java/org/example/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kodlamaio/src/main/java/org/example/entities/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kodlamaio/src/main/java/org/example/Instructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kodlamaio/src/main/java/org/example/entities/Instructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kodlamaio/src/main/java/org/example/Trainee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kodlamaio/src/main/java/org/example/entities/Trainee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kodlamaio/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kodlamaio/src/main/java/org/example/core/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2m6lfWcRvo8f8DwMqFjeiFb2DPj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,12 +40,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/eren.macit/IdeaProjects/EtiyaWorkshop",
+    "last_opened_file_path": "C:/Users/eren.macit/IdeaProjects/EtiyaWorkshop/Workshop2/Kodlamaio",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -43,6 +58,19 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eren.macit\IdeaProjects\EtiyaWorkshop\Workshop2\Kodlamaio\src\main\java\org\example\core" />
+      <recent name="C:\Users\eren.macit\IdeaProjects\EtiyaWorkshop\Workshop2\Kodlamaio\src\main\java\org\example\entities" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-corretto-21.0.2-4caba194b151-51586f01" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,6 +80,9 @@
       <option name="presentableId" value="Default" />
       <updated>1726405009836</updated>
       <workItem from="1726405010884" duration="881000" />
+      <workItem from="1726489351130" duration="924000" />
+      <workItem from="1726490300167" duration="955000" />
+      <workItem from="1726491281359" duration="413000" />
     </task>
     <servers />
   </component>

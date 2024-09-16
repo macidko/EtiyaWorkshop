@@ -1,8 +1,10 @@
-package org.example;
+package org.example.entities;
+
+import org.example.core.Entity;
 
 import java.util.List;
 
-public class Course {
+public class Course implements Entity {
     private int id;
     private String header;
     private String description;
@@ -21,6 +23,7 @@ public class Course {
         this.categories = categories;
     }
 
+    @Override
     public int getId() {
         return id;
     }
@@ -76,4 +79,6 @@ public class Course {
     public void setCategories(List<Category> categories) {
         this.categories = categories;
     }
+
+
 }
