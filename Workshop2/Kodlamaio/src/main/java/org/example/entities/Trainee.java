@@ -1,6 +1,4 @@
 package org.example.entities;
-
-import org.example.core.Entity;
 import org.example.core.User;
 
 import java.util.List;
