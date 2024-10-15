@@ -1,0 +1,33 @@
+<!-- Kullanıcının todo girebileceği bir form, altında todoların listelenmesi, her todonun 1. 2. diye sıralanması -->
+<!-- Sonunda (X) ikonu ile listeden kaldırılabilmesi -->
+<!-- Ekleme esnasında aynı todo mevcutsa (frontend kontrolü) eklemeyip inputu temizlesin.  -->
+<!-- Her ekleme sonrası input temizlensin. -->
+<!-- Bireysel -->
+
+<div class="main">
+  <div class="todo-cont">
+    <label for="todo-input">To-Do: </label>
+    <input type="text" name="todo-input" id="todo-input" [(ngModel)]="name" />
+    <input class="save-btn" type="button" value="Save" (click)="saveToDo()" />
+  </div>
+
+  <div class="todos-cont">
+    <ol>
+      @if(todos.length > 0){
+      <!-- @for (todo of todos; track todo) {
+          <li>
+            <span>{{ todo }}</span>
+            <button (click)="deleteTodo(todo)">x</button>
+          </li>
+        }  -->
+
+      <li *ngFor="let todo of todos">
+        <span>{{ todo }}</span>
+        <button class="delete-btn" type="button" (click)="deleteTodo(todo)">
+          x
+        </button>
+      </li>
+      }
+    </ol>
+  </div>
+</div>
